@@ -4,8 +4,11 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="title" value="C4 Context — Кейс 8 «Библиотека: выдача и просрочки», v1.1, 31.10.2026" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=27;fontStyle=1;fontColor=#17324D;align=center;verticalAlign=middle;">
+        <mxCell id="title" value="C4 Context — Библиотека" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=27;fontStyle=1;fontColor=#17324D;align=center;verticalAlign=middle;">
           <mxGeometry as="geometry" x="40" y="25" width="2120" height="55" />
+        </mxCell>
+        <mxCell id="version" value="v1.1 · 31.10.2026" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=14;fontStyle=0;fontColor=#7B8794;align=center;verticalAlign=middle;">
+          <mxGeometry as="geometry" x="40" y="80" width="2120" height="30" />
         </mxCell>
         <mxCell id="lib" value="Библиотекарь" vertex="1" parent="1" style="shape=umlActor;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=#526D82;strokeWidth=2;fontSize=19;fontStyle=1;fontColor=#17324D;align=center;verticalAlign=middle;verticalLabelPosition=bottom;verticalAlign=top;">
           <mxGeometry as="geometry" x="105" y="210" width="95" height="150" />
@@ -94,7 +97,7 @@
         <mxCell id="labelL5" value="L-5 · Передаёт список просроченных выдач&#10;(читатель, книга, срок, дней просрочки) — JSON&#10;по HTTP" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=17;fontStyle=0;fontColor=#7B8794;align=center;verticalAlign=middle;">
           <mxGeometry as="geometry" x="1380" y="800" width="420" height="120" />
         </mxCell>
-        <mxCell id="legend" value="Легенда&#10;Сплошная — MVP; пунктир — перспектива;&#10;серый — внешняя система" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=#FFF9E8;strokeColor=#D69E2E;strokeWidth=2;fontSize=18;fontStyle=1;fontColor=#17324D;align=center;verticalAlign=middle;">
+        <mxCell id="legend" value="Легенда&#10;Сплошная — MVP; пунктир — перспектива;&#10;серый — внешняя система" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=16;fontStyle=0;fontColor=#526D82;align=center;verticalAlign=middle;">
           <mxGeometry as="geometry" x="1460" y="940" width="700" height="110" />
         </mxCell>
       </root>
