@@ -1,0 +1,106 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="C4 Context v1.1" name="C4 Context v1.1">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageScale="1" pageWidth="2200" pageHeight="1100">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="C4 Context — Кейс 8 „Библиотека: выдача и просрочки“" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=27;fontStyle=1;fontColor=#17324D;align=center;verticalAlign=middle;">
+          <mxGeometry as="geometry" x="40" y="25" width="2120" height="55" />
+        </mxCell>
+        <mxCell id="version" value="v1.1 · 31.10.2026" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=14;fontStyle=0;fontColor=#7B8794;align=center;verticalAlign=middle;">
+          <mxGeometry as="geometry" x="40" y="80" width="2120" height="30" />
+        </mxCell>
+        <mxCell id="lib" value="Библиотекарь" vertex="1" parent="1" style="shape=umlActor;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=#526D82;strokeWidth=2;fontSize=19;fontStyle=1;fontColor=#17324D;align=center;verticalAlign=middle;verticalLabelPosition=bottom;verticalAlign=top;">
+          <mxGeometry as="geometry" x="105" y="210" width="95" height="150" />
+        </mxCell>
+        <mxCell id="libdesc" value="Сотрудник библиотеки.&#10;Оформляет выдачу и возврат,&#10;контролирует просрочки" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=15;fontStyle=0;fontColor=#17324D;align=center;verticalAlign=middle;">
+          <mxGeometry as="geometry" x="20" y="410" width="270" height="90" />
+        </mxCell>
+        <mxCell id="admin" value="Администратор" vertex="1" parent="1" style="shape=umlActor;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=#526D82;strokeWidth=2;fontSize=19;fontStyle=1;fontColor=#17324D;align=center;verticalAlign=middle;verticalLabelPosition=bottom;verticalAlign=top;">
+          <mxGeometry as="geometry" x="105" y="650" width="95" height="150" />
+        </mxCell>
+        <mxCell id="admindesc" value="Загружает данные из CSV,&#10;выгружает отчёты,&#10;ведёт роли и журнал" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=15;fontStyle=0;fontColor=#17324D;align=center;verticalAlign=middle;">
+          <mxGeometry as="geometry" x="20" y="850" width="270" height="90" />
+        </mxCell>
+        <mxCell id="system" value="«Библиотека:&#10;выдача и просрочки»&#10;&#10;Учёт выдач и возвратов, статусы выдач,&#10;отчёт «Просрочки» на дату,&#10;импорт и экспорт CSV.&#10;&#10;[1С:Предприятие 8.3 + веб-прототип]" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=#2855D9;strokeColor=#173EA5;strokeWidth=2;fontSize=19;fontStyle=1;fontColor=#FFFFFF;align=center;verticalAlign=middle;">
+          <mxGeometry as="geometry" x="870" y="340" width="480" height="370" />
+        </mxCell>
+        <mxCell id="bi" value="BI-система&#10;&#10;Визуализация показателей&#10;просрочек и оборачиваемости фонда&#10;(перспектива)" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=#E5E7EB;strokeColor=#7B8794;strokeWidth=2;fontSize=17;fontStyle=1;fontColor=#17324D;align=center;verticalAlign=middle;dashed=1;dashPattern=8 6;">
+          <mxGeometry as="geometry" x="1830" y="210" width="340" height="160" />
+        </mxCell>
+        <mxCell id="notify" value="Сервис уведомлений&#10;&#10;Напоминания читателям о сроке&#10;возврата и просрочке&#10;(перспектива)" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=#E5E7EB;strokeColor=#7B8794;strokeWidth=2;fontSize=17;fontStyle=1;fontColor=#17324D;align=center;verticalAlign=middle;dashed=1;dashPattern=8 6;">
+          <mxGeometry as="geometry" x="1830" y="650" width="340" height="160" />
+        </mxCell>
+        <mxCell id="L1" edge="1" parent="1" source="lib" target="system" style="html=0;strokeColor=#526D82;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitPerimeter=0;entryX=0;entryY=0.19;entryPerimeter=0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="810" y="285" />
+              <mxPoint x="810" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="labelL1" value="L-1 · Оформляет выдачу и возврат (reader_id,&#10;book_code, даты); формирует отчёт „Просрочки“ на дату&#10;— через клиент 1С (в демо — также веб-прототип)" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=17;fontStyle=0;fontColor=#526D82;align=center;verticalAlign=middle;">
+          <mxGeometry as="geometry" x="320" y="160" width="490" height="190" />
+        </mxCell>
+        <mxCell id="L3lib" edge="1" parent="1" source="system" target="lib" style="html=0;strokeColor=#526D82;strokeWidth=2;endArrow=block;endFill=1;exitX=0;exitY=0.35;exitPerimeter=0;entryX=1;entryY=0.93;entryPerimeter=0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="760" y="470" />
+              <mxPoint x="760" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="labelL3lib" value="L-3 · Отдаёт CSV-выгрузку отчёта „Просрочки“&#10;(reader_id, book_code, days_overdue и др., формат&#10;golden) — файл CSV" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=17;fontStyle=0;fontColor=#526D82;align=center;verticalAlign=middle;">
+          <mxGeometry as="geometry" x="310" y="360" width="490" height="100" />
+        </mxCell>
+        <mxCell id="L2" edge="1" parent="1" source="admin" target="system" style="html=0;strokeColor=#526D82;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitPerimeter=0;entryX=0;entryY=0.81;entryPerimeter=0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="810" y="725" />
+              <mxPoint x="810" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="labelL2" value="L-2 · Загружает CSV books / readers / loans (UTF-8),&#10;получает протокол импорта — через клиент 1С" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=17;fontStyle=0;fontColor=#526D82;align=center;verticalAlign=middle;">
+          <mxGeometry as="geometry" x="310" y="580" width="490" height="150" />
+        </mxCell>
+        <mxCell id="L3admin" edge="1" parent="1" source="system" target="admin" style="html=0;strokeColor=#526D82;strokeWidth=2;endArrow=block;endFill=1;exitX=0;exitY=0.95;exitPerimeter=0;entryX=1;entryY=0.93;entryPerimeter=0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="760" y="690" />
+              <mxPoint x="760" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="labelL3admin" value="L-3 · Отдаёт CSV-выгрузку отчёта „Просрочки“&#10;(reader_id, book_code, days_overdue и др., формат&#10;golden) — файл CSV" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=17;fontStyle=0;fontColor=#526D82;align=center;verticalAlign=middle;">
+          <mxGeometry as="geometry" x="310" y="800" width="490" height="150" />
+        </mxCell>
+        <mxCell id="L4" edge="1" parent="1" source="system" target="bi" style="html=0;strokeColor=#7B8794;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.19;exitPerimeter=0;entryX=0;entryY=0.5;entryPerimeter=0;dashed=1;dashPattern=8 6;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1750" y="410" />
+              <mxPoint x="1750" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="labelL4" value="L-4 · Передаёт данные о выдачах и просрочках&#10;на дату — JSON по HTTP-сервису 1С (GET&#10;/overdue?date=)" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=17;fontStyle=0;fontColor=#7B8794;align=center;verticalAlign=middle;">
+          <mxGeometry as="geometry" x="1380" y="105" width="420" height="140" />
+        </mxCell>
+        <mxCell id="L5" edge="1" parent="1" source="system" target="notify" style="html=0;strokeColor=#7B8794;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.81;exitPerimeter=0;entryX=0;entryY=0.5;entryPerimeter=0;dashed=1;dashPattern=8 6;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1750" y="640" />
+              <mxPoint x="1750" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="labelL5" value="L-5 · Передаёт список просроченных выдач&#10;(читатель, книга, срок, дней просрочки) — JSON&#10;по HTTP" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=17;fontStyle=0;fontColor=#7B8794;align=center;verticalAlign=middle;">
+          <mxGeometry as="geometry" x="1380" y="800" width="420" height="120" />
+        </mxCell>
+        <mxCell id="legend" value="Легенда&#10;Сплошная — MVP; пунктир — перспектива;&#10;серый — внешняя система" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=16;fontStyle=0;fontColor=#526D82;align=center;verticalAlign=middle;">
+          <mxGeometry as="geometry" x="1460" y="940" width="700" height="110" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
