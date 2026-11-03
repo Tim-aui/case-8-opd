@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" agent="Codex">
+<mxfile host="app.diagrams.net">
   <diagram id="C4 Context v1.1" name="C4 Context v1.1">
     <mxGraphModel grid="1" gridSize="10" page="1" pageScale="1" pageWidth="2200" pageHeight="1100">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="title" value="C4 Context — Библиотека" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=27;fontStyle=1;fontColor=#17324D;align=center;verticalAlign=middle;">
+        <mxCell id="title" value="C4 Context — Кейс 8 „Библиотека: выдача и просрочки“" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=27;fontStyle=1;fontColor=#17324D;align=center;verticalAlign=middle;">
           <mxGeometry as="geometry" x="40" y="25" width="2120" height="55" />
         </mxCell>
         <mxCell id="version" value="v1.1 · 31.10.2026" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=14;fontStyle=0;fontColor=#7B8794;align=center;verticalAlign=middle;">
@@ -39,7 +39,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="labelL1" value="L-1 · Оформляет выдачу и возврат (`reader_id`,&#10;`book_code`, даты); формирует отчёт „Просрочки“ на дату&#10;— через клиент 1С (в демо — также веб-прототип)" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=17;fontStyle=0;fontColor=#526D82;align=center;verticalAlign=middle;">
+        <mxCell id="labelL1" value="L-1 · Оформляет выдачу и возврат (reader_id,&#10;book_code, даты); формирует отчёт „Просрочки“ на дату&#10;— через клиент 1С (в демо — также веб-прототип)" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=17;fontStyle=0;fontColor=#526D82;align=center;verticalAlign=middle;">
           <mxGeometry as="geometry" x="320" y="160" width="490" height="190" />
         </mxCell>
         <mxCell id="L3lib" edge="1" parent="1" source="system" target="lib" style="html=0;strokeColor=#526D82;strokeWidth=2;endArrow=block;endFill=1;exitX=0;exitY=0.35;exitPerimeter=0;entryX=1;entryY=0.93;entryPerimeter=0;">
@@ -50,7 +50,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="labelL3lib" value="L-3 · Отдаёт CSV-выгрузку отчёта „Просрочки“&#10;(`reader_id, book_code, days_overdue` и др., формат&#10;golden) — файл CSV" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=17;fontStyle=0;fontColor=#526D82;align=center;verticalAlign=middle;">
+        <mxCell id="labelL3lib" value="L-3 · Отдаёт CSV-выгрузку отчёта „Просрочки“&#10;(reader_id, book_code, days_overdue и др., формат&#10;golden) — файл CSV" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=17;fontStyle=0;fontColor=#526D82;align=center;verticalAlign=middle;">
           <mxGeometry as="geometry" x="310" y="360" width="490" height="100" />
         </mxCell>
         <mxCell id="L2" edge="1" parent="1" source="admin" target="system" style="html=0;strokeColor=#526D82;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitPerimeter=0;entryX=0;entryY=0.81;entryPerimeter=0;">
@@ -72,7 +72,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="labelL3admin" value="L-3 · Отдаёт CSV-выгрузку отчёта „Просрочки“&#10;(`reader_id, book_code, days_overdue` и др., формат&#10;golden) — файл CSV" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=17;fontStyle=0;fontColor=#526D82;align=center;verticalAlign=middle;">
+        <mxCell id="labelL3admin" value="L-3 · Отдаёт CSV-выгрузку отчёта „Просрочки“&#10;(reader_id, book_code, days_overdue и др., формат&#10;golden) — файл CSV" vertex="1" parent="1" style="shape=rect;rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=2;fontSize=17;fontStyle=0;fontColor=#526D82;align=center;verticalAlign=middle;">
           <mxGeometry as="geometry" x="310" y="800" width="490" height="150" />
         </mxCell>
         <mxCell id="L4" edge="1" parent="1" source="system" target="bi" style="html=0;strokeColor=#7B8794;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.19;exitPerimeter=0;entryX=0;entryY=0.5;entryPerimeter=0;dashed=1;dashPattern=8 6;">
